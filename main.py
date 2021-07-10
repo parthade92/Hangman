@@ -86,7 +86,6 @@ while not end:
         stage -= 1
         if stage == 0:
             end = True
-
             print("You Lose.")
     if "_" not in display:
         end = True
