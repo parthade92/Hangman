@@ -67,7 +67,7 @@ man = ['''
 =========
 ''']
 print(logo)
-print(chosen_words)
+print(chosen_words)  # testing purpose
 stage = 6
 length = len(chosen_words)
 display = []
@@ -84,6 +84,7 @@ while not end:
     print(display)
     if guess not in chosen_words:
         stage -= 1
+        print(f"You've guessed {guess}, that's not in the word.")
         if stage == 0:
             end = True
             print("You Lose.")
@@ -91,4 +92,4 @@ while not end:
         end = True
         print("You Win")
     print(man[stage])
-
+    print(f'Lives Left: {stage}')
