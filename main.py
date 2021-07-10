@@ -76,6 +76,8 @@ for i in range(length):
 end = False
 while not end:
     guess = input("\nGuess a letter: ").lower()
+    if guess in display:
+        print("You've already guessed that letter")
     for i in range(length):
         if chosen_words[i] == guess:
             display[i] = guess
