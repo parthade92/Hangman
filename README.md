@@ -1,1 +1,2 @@
 # Hangman
+It's Hangman.
